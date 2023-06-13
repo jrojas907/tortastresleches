@@ -1,0 +1,300 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'courgette', cursive;
+  
+  
+  }
+  
+  /*-------------------Barra de Navegacion--------------------------------------*/
+  
+  /*logo de la barra de navegacion*/
+  
+  .navbar-brand1 {
+    border-radius: 100px;
+    border: white solid 3px;
+    width: 60px;
+  }
+  
+  /*Sombra de la seleccion en el nav*/
+  .nav-item a.active {
+    /* border: 2px solid rgb(121, 119, 122);*/
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px 0 rgba(224, 62, 197, 0.486);
+  
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.2);
+  }
+  
+  .navbar {
+    font-size: 20px;
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(181, 247, 247, 0.6138830532212884) 100%);
+  }
+  
+  
+  /*Estilo de iconos de ig y wa*/
+  .iconos {
+    font-size: 30px;
+    margin-right: 20px;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+  
+  }
+  
+  /*Hover de los iconos*/
+  .iconos a:hover {
+    color: rgb(28, 28, 141);
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+  
+
+
+
+
+  /*-------------------Estilos de boton---------------------------*/
+  
+  
+  #buttonup {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(137, 43, 226, 0.637);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+  }
+  
+  #buttonup:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+
+
+
+
+
+/*------------------formulario---------------*/
+
+
+
+.contactarnos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.separar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formulario{
+    margin: 20px;
+    padding:20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 350;
+    background-color: rgba(255, 0, 255, 0.062);
+}
+
+.input-group{
+    display:flex;
+    flex-direction: column;
+    text-align: center;  
+    
+
+}
+
+form h2{
+    color: rgb(40, 17, 139);
+    font-size: 35;
+}
+
+
+label{
+    color: green;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+input, textarea{
+
+    padding: 17px 25px;
+    margin: 20px;
+    background-color: rgba(97, 92, 92, 0.123);
+    border: 2px solid rgba(0, 0, 0, 0.685);
+    color: rgb(75, 42, 165);
+    outline: none;
+
+}
+
+
+input::placeholder, textarea::placeholder{
+    color: rgb(0, 0, 0)
+}
+
+
+input.btn{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.479);
+    border-radius: 25px;
+    background-color: rgba(163, 38, 157, 0.418);
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.274);
+    cursor: pointer;
+    margin:5px;
+}
+
+input.btn:hover{
+    background-color: salmon;
+}
+
+  
+
+
+.formascontacto{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input{
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+  /*----------------------footer------------------------------------------------*/
+  
+  /*Box del footer*/
+  .piepagina {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.39);
+  }
+  
+  /*logo del footer*/
+  .tamañoimg {
+    width: 70px;
+    border-radius: 100px;
+    border: white solid 3px;
+  }
+  
+  /*Estilo y ubicacion de los elementos del footer*/
+  .piepagina .grupo1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*Hace que se pongan en columna de 3 y ocupe todo el espacio del fragmento*/
+    grid-gap: 50px;
+    /*Hace un margen entre cada columna*/
+    padding: 10px 0;
+    justify-items: center;
+    align-items: center;
+  
+  }
+  
+  /*Estilos del footer*/
+  .box {
+    display: flex;
+    font-size: 15px;
+    font-family: 'Courgette', cursive;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /*Estilo de las palabras del footer*/
+  .box p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /*Hover de los iconos de redes*/
+  .box a:hover {
+    color: rgb(28, 28, 141);
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+  
+  /*Estilo de derechos reservados*/
+  .piepagina .grupo2 {
+    background-color: rgba(128, 128, 128, 0.315);
+    padding: 1px;
+    text-align: center;
+  
+  }
+  
+  
+  
+
+  
+  
+  
+  
+
+  
