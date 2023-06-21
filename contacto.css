@@ -206,22 +206,6 @@ input.btn:hover{
 
 
 
-@media(max-width:991px){
-    body{
-        padding: 30px;
-    }
-
-    form{
-        padding: 50px 30px;
-        width: 100%;
-    }
-
-    input{
-        padding: 15px;
-    }
-}
-
-
 
 
 
@@ -292,9 +276,48 @@ input.btn:hover{
   
   
 
+  /*--------------------Responsive---------------*/
+  @media(max-width: 600px) {
+
+    .nav-item:hover {
+      transform: scale(1);
+    }
+    
+    
+.contactarnos{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+
+    .formascontacto{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      
+  }
   
+  
+    .piepagina .grupo1 {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      /*Hace que se pongan en columna de 3 y ocupe todo el espacio del fragmento*/
+      height: 100%;
+    }
+  
+    .nav-item a.active {
+      /* border: 2px solid rgb(121, 119, 122);*/
+      border-radius: 0%;
+      box-shadow: inset 0 0 5px 0 rgba(224, 62, 197, 0.486);
+  
+    }
+  }
   
   
   
 
-  
+ 

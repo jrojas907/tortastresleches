@@ -52,15 +52,86 @@
   transform: scale(1.2);
 }
 
-/*Corregir el tamaño de las imagenes para que quede cuadrado perfecto*/
 
-.filas img {
-  height: 250px;
-  width: 325px;
-  margin: 4px;
+
+
+/*----------Estilos Carrusel---------------*/
+
+.imagen{
+width: 100%;
+height: 100vh;
 
 
 }
+
+
+/*-------------------Estilo de la pagina-------------*/
+.imagencentral img {
+  width: 100%;
+  height:80vh;
+  
+}
+
+.filas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.columnas {
+  flex: 25%;
+    
+}
+
+
+.cuadrotexto{  
+background-color: rgba(250, 128, 114, 0.507);
+    
+}
+
+
+.cuadrotexto2{  
+background-color: rgba(255, 255, 0, 0.315);
+ 
+}
+
+
+
+.invitacion{
+background-color: rgba(0, 255, 242, 0.349);
+height: 50vh;
+text-align: center;
+display: grid;
+grid-template-columns: 1fr, 1fr;
+align-items: center;
+
+}
+
+
+
+
+
+/*------------Estilo parrafo de nosotros---------*/
+
+
+.parrafo{
+background-color: rgba(218, 61, 184, 0.199);
+text-align: center;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+padding: 25px;
+
+
+}
+
+
+
+
+
+
 
 
 /*-------------------Estilos de boton---------------------------*/
@@ -164,6 +235,63 @@
 
 
 
+
+
+@media(max-width: 600px) {
+
+  .nav-item:hover {
+    transform: scale(1);
+  }
+  
+  .imagen{
+    width: 100%;
+    height: 50vh;    
+    
+    }
+
+  .imagencentral img {
+      width: 100%;
+      height:40vh;
+      
+  }
+    
+  .invitacion{
+    background-color: rgba(0, 255, 242, 0.349);
+    height: 25vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    align-items: center;
+    
+    }
+    
+    
+
+  .columnas {
+    flex: 100%;
+  }
+
+  .piepagina .grupo1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /*Hace que se pongan en columna de 3 y ocupe todo el espacio del fragmento*/
+    height: 100%;
+  }
+
+  .nav-item a.active {
+    /* border: 2px solid rgb(121, 119, 122);*/
+    border-radius: 0%;
+    box-shadow: inset 0 0 5px 0 rgba(224, 62, 197, 0.486);
+
+  }
+}
+
+/*-------------------------------------------------------Estilo de la pagina---------------------------------------------------*/
+
+
+
+
 /*Estilo de la pagina*/
 img {
   width: 100%
@@ -186,24 +314,40 @@ img {
   margin-top: 10px;
 }
 
-@media(max-width: 600px) {
 
-  .columnas {
-    flex: 100%;
+
+
+
+  /*--------------------Responsive---------------*/
+  @media(max-width: 600px) {
+
+    .nav-item:hover {
+      transform: scale(1);
+    }
+    
+    
+
+     .columnas {
+        flex: 100%;
+      }
+    
+     
+  
+    .piepagina .grupo1 {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      /*Hace que se pongan en columna de 3 y ocupe todo el espacio del fragmento*/
+      height: 100%;
+    }
+  
+    .nav-item a.active {
+      /* border: 2px solid rgb(121, 119, 122);*/
+      border-radius: 0%;
+      box-shadow: inset 0 0 5px 0 rgba(224, 62, 197, 0.486);
+  
+    }
   }
-
-  .piepagina .grupo1 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    /*Hace que se pongan en columna de 3 y ocupe todo el espacio del fragmento*/
-    height: 100%;
-  }
-
-  .nav-item a.active {
-    /* border: 2px solid rgb(121, 119, 122);*/
-    border-radius: 0%;
-    box-shadow: inset 0 0 5px 0 rgba(224, 62, 197, 0.486);
-
-  }
-}
+  
+  
+  

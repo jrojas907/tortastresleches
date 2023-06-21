@@ -1,111 +1,115 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'courgette', cursive;
-  
-  
-  }
-  
-  /*-------------------Barra de Navegacion--------------------------------------*/
-  
-  /*logo de la barra de navegacion*/
-  
-  .navbar-brand1 {
-    border-radius: 100px;
-    border: white solid 3px;
-    width: 60px;
-  }
-  
-  /*Sombra de la seleccion en el nav*/
-  .nav-item a.active {
-    /* border: 2px solid rgb(121, 119, 122);*/
-    border-radius: 50%;
-    box-shadow: inset 0 0 5px 0 rgba(224, 62, 197, 0.486);
-  
-  }
-  
-  .nav-item:hover {
-    transform: scale(1.2);
-  }
-  
-  .navbar {
-    font-size: 20px;
-    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(181, 247, 247, 0.6138830532212884) 100%);
-  }
-  
-  
-  /*Estilo de iconos de ig y wa*/
-  .iconos {
-    font-size: 30px;
-    margin-right: 20px;
-    display: inline-block;
-    color: inherit;
-    text-decoration: none;
-  
-  }
-  
-  /*Hover de los iconos*/
-  .iconos a:hover {
-    color: rgb(28, 28, 141);
-    opacity: 0.7;
-    transform: scale(1.2);
-  }
-  
-  
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'courgette', cursive;
+
+
+}
+
+/*-------------------Barra de Navegacion--------------------------------------*/
+
+/*logo de la barra de navegacion*/
+
+
+.navbar-brand1 {
+  border-radius: 100px;
+  border: white solid 3px;
+  width: 60px;
+}
+
+/*Sombra de la seleccion en el nav*/
+.nav-item a.active {
+  /* border: 2px solid rgb(121, 119, 122);*/
+  border-radius: 50%;
+  box-shadow: inset 0 0 5px 0 rgba(224, 62, 197, 0.486);
+
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+}
+
+.navbar {
+  font-size: 20px;
+  background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(181, 247, 247, 0.6138830532212884) 100%);
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+/*Estilo de iconos de ig y wa*/
+.iconos {
+  font-size: 30px;
+  margin-right: 20px;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+
+}
+
+/*Hover de los iconos*/
+.iconos a:hover {
+  color: rgb(28, 28, 141);
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+
 
 
 /*----------Estilos Carrusel---------------*/
 
 .imagen{
+width: 100%;
+height: 100vh;
+
+
+}
+
+
+/*-------------------Estilo de la pagina-------------*/
+.imagencentral img {
   width: 100%;
-  height: 100vh;
-  
+  height:80vh;
   
 }
 
- 
-  /*-------------------Estilo de la pagina-------------*/
-  .imagencentral img {
-    width: 100%;
-    height:80vh;
+.filas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.columnas {
+  flex: 25%;
     
-  }
-  
-  .filas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .columnas {
-    flex: 25%;
-      
-  }
-  
+}
+
 
 .cuadrotexto{  
-  background-color: rgba(250, 128, 114, 0.507);
-      
+background-color: rgba(250, 128, 114, 0.507);
+    
 }
 
 
 .cuadrotexto2{  
-  background-color: rgba(255, 255, 0, 0.315);
-   
+background-color: rgba(255, 255, 0, 0.315);
+ 
 }
 
 
 
 .invitacion{
-  background-color: rgba(0, 255, 242, 0.349);
-  height: 50vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  
+background-color: rgba(0, 255, 242, 0.349);
+height: 50vh;
+text-align: center;
+display: grid;
+grid-template-columns: 1fr, 1fr;
+align-items: center;
+
 }
 
 
@@ -116,12 +120,12 @@
 
 
 .parrafo{
-background-color: rgba(128, 128, 128, 0.103);
+background-color: rgba(218, 61, 184, 0.199);
 text-align: center;
 justify-content: center;
 align-items: center;
 font-size: 20px;
-padding: 50px;
+padding: 25px;
 
 
 }
@@ -133,127 +137,156 @@ padding: 50px;
 
 
 
-  /*-------------------Estilos de boton---------------------------*/
-  
-  
-  #buttonup {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(137, 43, 226, 0.637);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 20px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    cursor: pointer;
-    border: 4px solid transparent;
-    transition: all 300ms ease;
-    transform: scale(0);
+/*-------------------Estilos de boton---------------------------*/
+
+
+#buttonup {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(137, 43, 226, 0.637);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 300ms ease;
+  transform: scale(0);
+}
+
+#buttonup:hover {
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/*----------------------footer------------------------------------------------*/
+
+/*Box del footer*/
+.piepagina {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+
+/*logo del footer*/
+.tamañoimg {
+  width: 70px;
+  border-radius: 100px;
+  border: white solid 3px;
+}
+
+/*Estilo y ubicacion de los elementos del footer*/
+.piepagina .grupo1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*Hace que se pongan en columna de 3 y ocupe todo el espacio del fragmento*/
+  grid-gap: 50px;
+  /*Hace un margen entre cada columna*/
+  padding: 10px 0;
+  justify-items: center;
+  align-items: center;
+
+}
+
+/*Estilos del footer*/
+.box {
+  display: flex;
+  font-size: 15px;
+  font-family: 'Courgette', cursive;
+  align-items: center;
+  text-align: center;
+}
+
+/*Estilo de las palabras del footer*/
+.box p {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*Hover de los iconos de redes*/
+.box a:hover {
+  color: rgb(28, 28, 141);
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+/*Estilo de derechos reservados*/
+.piepagina .grupo2 {
+  background-color: rgba(128, 128, 128, 0.315);
+  padding: 1px;
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------Estilo de la pagina---------------------------------------------------*/
+
+
+
+
+
+
+@media(max-width: 600px) {
+
+  .nav-item:hover {
+    transform: scale(1);
   }
   
-  #buttonup:hover {
-    transform: scale(1.1);
-    border-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  
-  
-  /*----------------------footer------------------------------------------------*/
-  
-  /*Box del footer*/
-  .piepagina {
+  .imagen{
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.39);
+    height: 50vh;    
+    
+    }
+
+  .imagencentral img {
+      width: 100%;
+      height:40vh;
+      
   }
-  
-  /*logo del footer*/
-  .tamañoimg {
-    width: 70px;
-    border-radius: 100px;
-    border: white solid 3px;
+    
+  .invitacion{
+    background-color: rgba(0, 255, 242, 0.349);
+    height: 25vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    align-items: center;
+    
+    
+    }
+    
+    
+
+  .columnas {
+    flex: 100%;
   }
-  
-  /*Estilo y ubicacion de los elementos del footer*/
+
   .piepagina .grupo1 {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     /*Hace que se pongan en columna de 3 y ocupe todo el espacio del fragmento*/
-    grid-gap: 50px;
-    /*Hace un margen entre cada columna*/
-    padding: 10px 0;
-    justify-items: center;
-    align-items: center;
-  
+    height: 100%;
   }
-  
-  /*Estilos del footer*/
-  .box {
-    display: flex;
-    font-size: 15px;
-    font-family: 'Courgette', cursive;
-    align-items: center;
-    text-align: center;
-  }
-  
-  /*Estilo de las palabras del footer*/
-  .box p {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  /*Hover de los iconos de redes*/
-  .box a:hover {
-    color: rgb(28, 28, 141);
-    opacity: 0.7;
-    transform: scale(1.2);
-  }
-  
-  /*Estilo de derechos reservados*/
-  .piepagina .grupo2 {
-    background-color: rgba(128, 128, 128, 0.315);
-    padding: 1px;
-    text-align: center;
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  /*-------------------------------------------------------Estilo de la pagina---------------------------------------------------*/
-  
-  
-  
 
-  
-  
-  @media(max-width: 600px) {
-  
-    .columnas {
-      flex: 100%;
-    }
-  
-    .piepagina .grupo1 {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      /*Hace que se pongan en columna de 3 y ocupe todo el espacio del fragmento*/
-      height: 100%;
-    }
-  
-    .nav-item a.active {
-      /* border: 2px solid rgb(121, 119, 122);*/
-      border-radius: 0%;
-      box-shadow: inset 0 0 5px 0 rgba(224, 62, 197, 0.486);
-  
-    }
+  .nav-item a.active {
+    /* border: 2px solid rgb(121, 119, 122);*/
+    border-radius: 0%;
+    box-shadow: inset 0 0 5px 0 rgba(224, 62, 197, 0.486);
+
   }
+}

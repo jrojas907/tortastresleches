@@ -23,10 +23,11 @@ window.onscroll = function () {
 
 /*Jquery movilidad al ScrollUp*/
 
+
 $(document).ready(function () {
-    $("button").click(function () {
-        $("#buttonup").animate({ bottom: '5000px' });
-        $("#buttonup").animate({ bottom: '25px' });
+    $("#buttonup").click(function () {
+        $(this).animate({ bottom: '5000px' });
+        $(this).animate({ bottom: '25px' });
     });
 
 });
